@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    >
+
+    <ImageView
+        android:id="@+id/iv_light"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/ic_light_white_24"
+        android:tint="@color/white"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_dice"
+        android:layout_width="match_parent"
+        android:layout_height="450dp">
+
+        <View
+            android:id="@+id/point_center"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_centerInParent="true"/>
+
+        <ImageView
+            android:id="@+id/iv_1"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            app:srcCompat="@drawable/img_1"
+            android:layout_above="@id/point_center"
+            android:layout_toStartOf="@id/point_center"
+            android:layout_marginEnd="10dp"
+            android:rotation="-47"
+            />
+
+        <ImageView
+            android:id="@+id/iv_2"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            app:srcCompat="@drawable/img_2"
+            android:layout_above="@id/point_center"
+            android:layout_toEndOf="@id/point_center"
+            android:layout_marginStart="10dp"
+            android:rotation="112"
+            />
+
+        <ImageView
+            android:id="@+id/iv_3"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            app:srcCompat="@drawable/img_3"
+            android:layout_below="@id/point_center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:rotation="60"
+            />
+
+
+        <ImageView
+            android:id="@+id/iv_plate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dia_324x316"
+            android:layout_centerInParent="true"
+            android:visibility="visible"/>
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_dice"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal">
+        <Button
+            android:id="@+id/btn_shuffle"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="@string/shuffle"
+            android:backgroundTint="@color/redA200"
+            android:paddingVertical="15dp"
+            android:layout_marginEnd="20dp"
+            />
+
+<!--        <Button-->
+<!--            android:id="@+id/btn_open_close"-->
+<!--            android:layout_width="120dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="@string/open"-->
+<!--            android:backgroundTint="@color/redA200"-->
+<!--            android:paddingVertical="15dp"-->
+<!--            android:layout_marginStart="20dp"-->
+<!--            />-->
+
+    </LinearLayout>
+
+
+</RelativeLayout>

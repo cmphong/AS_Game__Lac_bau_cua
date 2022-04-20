@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/myBackgroundColor">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img_arrow_tut"
+            android:layout_above="@id/iv_rectangle"
+            android:layout_alignEnd="@id/iv_rectangle"
+            android:layout_marginBottom="-10dp"
+            android:layout_marginEnd="10dp"/>
+        <ImageView
+            android:id="@+id/iv_rectangle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img_rectangle_tut"
+            android:layout_centerInParent="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tutorial"
+            android:textColor="@color/black"
+            android:layout_centerInParent="true"
+            android:paddingBottom="10dp"/>
+
+</RelativeLayout>

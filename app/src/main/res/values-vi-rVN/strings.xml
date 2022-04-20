@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Lắc Bầu Cua</string>
+    <string name="shuffle">Lắc</string>
+    <string name="open">Mở</string>
+    <string name="close">Đóng</string>
+    <string name="tutorial">Bạn cũng có thể lắc điện thoại để sốc hột</string>
+</resources>
